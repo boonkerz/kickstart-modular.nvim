@@ -3,6 +3,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>c', function()
   MiniBufremove.delete()
 end, { desc = 'close buffer' })
+vim.keymap.set('n', '<leader>q', ':q<CR>', { desc = 'close buffer' })
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
