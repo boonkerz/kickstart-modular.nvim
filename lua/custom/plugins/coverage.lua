@@ -5,6 +5,24 @@ return {
     dependencies = {
       'nvim-lua/plenary.nvim',
     },
+    keys = {
+      {
+        '<leader>cc',
+        function()
+          require('coverage').load()
+          require('coverage').show()
+        end,
+        desc = 'Coverage Load',
+      },
+      {
+        '<leader>cs',
+        function()
+          require('coverage').load()
+          require('coverage').summary()
+        end,
+        desc = 'Coverage Summary',
+      },
+    },
     config = function()
       require('coverage').setup {
         commands = true,

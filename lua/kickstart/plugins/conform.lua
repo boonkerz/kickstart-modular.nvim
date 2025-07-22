@@ -30,7 +30,7 @@ return {
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        php = { 'mago_format', 'mago_lint },
+        php = { 'mago_format', 'mago_lint' },
       },
     },
   },
